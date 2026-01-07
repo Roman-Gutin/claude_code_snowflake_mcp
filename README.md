@@ -29,7 +29,7 @@ Connect [Claude Code](https://claude.ai/download) to your Snowflake-managed MCP 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/snowflake-mcp-claude-code.git
+git clone https://github.com/Roman-Gutin/claude_code_snowflake_mcp.git
 cd snowflake-mcp-claude-code
 
 # Start Claude Code in this directory
