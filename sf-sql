@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Snowflake SQL - Command line wrapper for snowflake_sql_api.py
+# Usage: ./sf-sql "SELECT * FROM mytable"
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Check if python3 is available
+if ! command -v python3 &> /dev/null; then
+    echo "Error: python3 is required but not found"
+    exit 1
+fi
+
+# Check if required Python packages are installed
+python3 -c "import requests; import dotenv" 2>/dev/null
+if [ $? -ne 0 ]; then
+    echo "Installing required Python packages..."
+    pip3 install requests python-dotenv
+fi
+
+# Execute the Python script
+python3 "$SCRIPT_DIR/snowflake_sql_api.py" "$@"

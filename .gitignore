@@ -1,0 +1,38 @@
+# Environment variables with secrets
+.env
+
+# MCP configuration with tokens
+.mcp.json
+
+# Claude Code local settings
+.claude/
+
+# OAuth temporary files
+/tmp/snowflake_oauth_code.txt
+oauth_tokens.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+ENV/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/

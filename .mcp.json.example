@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "YOUR_MCP_FRIENDLY_NAME": {
+      "type": "http",
+      "url": "https://YOUR_ACCOUNT.snowflakecomputing.com/api/v2/databases/YOUR_DATABASE/schemas/YOUR_SCHEMA/mcp-servers/YOUR_MCP_SERVER_NAME",
+      "headers": {
+        "Authorization": "Bearer ${SNOWFLAKE_MCP_TOKEN}"
+      }
+    }
+  }
+}
